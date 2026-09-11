@@ -1,10 +1,11 @@
 /**
- * ALICE ESL Phonics P7 - Mighty Fish 3D 海底探險題庫資料
+ * ALICE ESL Phonics P7 - 大魚吃小魚英文冒險題庫 (data.js)
  * 課本學習範圍：Page 04 - 12
  * 主題：Classroom Rules & R-Controlled Vowels
  */
 
-const P7_FISH_QUESTIONS = [
+window.BOOK_ID = "P7";
+const FISH_QUESTIONS = [
   {
     "id": "fish-qa-1",
     "type": "QA",
@@ -19,23 +20,23 @@ const P7_FISH_QUESTIONS = [
     ],
     "correct": "Yes, I can.",
     "audioFallback": "P7_flashcards_audios/P7_raise hand.mp3",
-    "voiceType": "speech"
+    "theme": "Classroom Rules & R-Controlled Vowels"
   },
   {
     "id": "fish-qa-2",
     "type": "QA",
     "source": "ALICE ESL Phonics P7 Page 04 - 12",
-    "questionEn": "Can we run in the classroom?",
-    "questionZh": "我們能在教室裡奔跑嗎？",
-    "speechText": "Can we run in the classroom?",
+    "questionEn": "Should we be quiet in class?",
+    "questionZh": "我們在課堂上應該安靜嗎？",
+    "speechText": "Should we be quiet in class?",
     "options": [
-      "No, we can't.",
-      "Yes, we can.",
+      "Yes, we should.",
+      "No, we shouldn't.",
       "Yes, we line."
     ],
-    "correct": "No, we can't.",
+    "correct": "Yes, we should.",
     "audioFallback": "P7_flashcards_audios/P7_be quiet.mp3",
-    "voiceType": "speech"
+    "theme": "Classroom Rules & R-Controlled Vowels"
   },
   {
     "id": "fish-qa-3",
@@ -51,7 +52,7 @@ const P7_FISH_QUESTIONS = [
     ],
     "correct": "stand up",
     "audioFallback": "P7_flashcards_audios/P7_stand up.mp3",
-    "voiceType": "speech"
+    "theme": "Classroom Rules & R-Controlled Vowels"
   },
   {
     "id": "fish-qa-4",
@@ -67,7 +68,7 @@ const P7_FISH_QUESTIONS = [
     ],
     "correct": "park",
     "audioFallback": "P7_flashcards_audios/P7_park.mp3",
-    "voiceType": "speech"
+    "theme": "Classroom Rules & R-Controlled Vowels"
   },
   {
     "id": "fish-qa-5",
@@ -83,7 +84,7 @@ const P7_FISH_QUESTIONS = [
     ],
     "correct": "ruler",
     "audioFallback": "P7_flashcards_audios/P7_ruler.mp3",
-    "voiceType": "speech"
+    "theme": "Classroom Rules & R-Controlled Vowels"
   },
   {
     "id": "fish-qa-6",
@@ -99,21 +100,10 @@ const P7_FISH_QUESTIONS = [
     ],
     "correct": "bird",
     "audioFallback": "P7_flashcards_audios/P7_bird.mp3",
-    "voiceType": "speech"
+    "theme": "Classroom Rules & R-Controlled Vowels"
   }
 ];
 
 if (typeof window !== "undefined") {
-  window.P1_FISH_QUESTIONS = P7_FISH_QUESTIONS;
-  window.P7_FISH_QUESTIONS = P7_FISH_QUESTIONS;
-  window.P1_QUESTIONS_DATA = P7_FISH_QUESTIONS;
-  window.P7_QUESTIONS_DATA = P7_FISH_QUESTIONS;
-}
-
-if (typeof module !== "undefined" && module.exports) {
-  module.exports = {
-    P1_FISH_QUESTIONS: P7_FISH_QUESTIONS,
-    P7_FISH_QUESTIONS,
-    P1_QUESTIONS_DATA: P7_FISH_QUESTIONS
-  };
+  window.FISH_QUESTIONS = FISH_QUESTIONS;
 }
