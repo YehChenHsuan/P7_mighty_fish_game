@@ -1,4 +1,4 @@
-{
+window.SENTENCES_AUDIO_MAP = {
   "Can you raise your hand?": "assets/audios/tts/fish_q_0_313c65c9.mp3",
   "Yes, I can.": "assets/audios/tts/fish_opt_3b925184.mp3",
   "No, I can't.": "assets/audios/tts/fish_opt_5617396f.mp3",
@@ -21,4 +21,4 @@
   "Which word has sound ir?": "assets/audios/tts/fish_q_5_0554925f.mp3",
   "hard": "assets/audios/tts/fish_opt_d64a8445.mp3",
   "winter": "assets/audios/tts/fish_opt_f6432274.mp3"
-}
+};
